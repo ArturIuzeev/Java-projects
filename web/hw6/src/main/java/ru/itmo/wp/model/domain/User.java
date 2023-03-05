@@ -1,0 +1,44 @@
+package ru.itmo.wp.model.domain;
+
+import java.io.Serializable;
+import java.util.Date;
+
+public class User implements Serializable {
+    private long id;
+    private String loginOrEmail;
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    private String email;
+    private Date creationTime;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getLoginOrEmail() {
+        return loginOrEmail;
+    }
+
+    public void setLoginOrEmail(String loginOrEmail) {
+        this.loginOrEmail = loginOrEmail;
+    }
+
+    public Date getCreationTime() {
+        return creationTime;
+    }
+
+    public void setCreationTime(Date creationTime) {
+        this.creationTime = creationTime;
+    }
+}
